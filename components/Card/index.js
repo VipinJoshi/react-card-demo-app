@@ -104,7 +104,7 @@ class Card extends Component {
 
                 <div className="grid">
                     {data.map((user, index) =>
-                        <CardDetail data={user} key={index} />
+                        <CardDetail data={user}  key={`${index}_${user.name}`} />
                     )}
                 </div>
             }
